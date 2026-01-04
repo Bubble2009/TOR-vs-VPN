@@ -137,7 +137,7 @@ Viceversa, se ci colleghiamo a TOR e dopo l'exit realy puntiamo ad una VPN, il s
 Ricordiamoci che ogni passaggi in più, rallenta la connessione.
 
 Visto quanto detto sopra, sembra che il meglio per la nostra privacy possa essere VPN + TOR, ma questo non ci permetterebbe di visitare tutti i siti. Potrebbe essere quindi VPN + TOR + VPN la soluzione migliore?<br>
-Forse sì, ma sicuramente sarebbe assai lento.
+Forse sì, ma sicuramente sarebbe assai lento ed oneroso dovendo pagare due VPN.
 
 ## Siti **.onion** e DarkWeb
 I siti **.onion** sono raggiungibili unicamente utilizzando l'Onion Routing, ma funzionano in maniera differente da quello che abbiamo visto prima.
