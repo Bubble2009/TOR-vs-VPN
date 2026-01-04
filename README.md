@@ -109,7 +109,7 @@ Facciamo quindi un paragone:
 ![Working VPN](assets/VPN_Working.jpg)
 
 Se Alice si connette ad un sito senza VPN, sarà il suo ISP a conoscere sia l'indirizzo IP che il sito che andrà a visitare.<br>
-Usando una VPN, sarà invece il gestore della VPN a conoscere sia l'indirizzo IP di ALice che il sito che andrà a visitare.
+Usando una VPN, sarà invece il gestore della VPN a conoscere sia l'indirizzo IP di Alice che il sito che andrà a visitare.
 
 #### A chi volgiamo dare la nostra fiducia?
 Nei due esempi di prima, ci sarà sempre qualcuno che conoscerà sia il nostro indirizzo IP che il sito che andremo a visitare. Siamo noi a dover decidere a chi dare la nostra fiducia: al nostro ISP o al gestore della VPN ?
