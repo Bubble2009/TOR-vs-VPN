@@ -96,7 +96,7 @@ Vediamo ora brevemente cos'è una VPN.
 
 ![VPN](assets/VPN.jpg)
 
-Ci sono differenti tipologie di VPN, ma ora vedremo soltanto la versione che reinstra il traffico dati tramite il server VPN.<br>
+Ci sono differenti tipologie di VPN, ma ora vedremo soltanto la versione che reinstrada il traffico dati tramite il server VPN.<br>
 Quando utilizziamo una VPN, il nostro device si collega ad un server **centralizzato** che che reinstraderà il nostro traffico verso li sito che vogliamo visionare.
 
 Cosa vuol dire questo?<br>
