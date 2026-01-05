@@ -2,7 +2,7 @@
 
 ![TOR VPN](assets/TorVPN.jpg)
 
-Sento spesso nominare a sproposito questi due sistemi di "*anonimizzazione*", pertanto ho pensato di scrivere due righe sui vari casi d'uso di questi due sistemi, modo da chiarire se e quando usarli, ma soprattutto se e quale utilizzare.
+Sento spesso nominare a sproposito questi due sistemi di "*anonimizzazione*", pertanto ho pensato di scrivere due righe sui vari casi d'uso di questi due sistemi, in modo da chiarire se e quando usarli, ma soprattutto se e quale utilizzare.
 
 ![Work in Progress](assets/wip2.gif)
 
