@@ -126,7 +126,7 @@ Tra le VPN commerciali, in rete, viene molto gettonata la VPN di [:link: Mullvad
 **Io non do alcun tipo di consiglio su nessuna VPN**<br>
 Questa non vuole essere una guida a scopo commerciale, ma vi rendo noto che potreste crearne anche una vostra.<br>
 Richiede un po' di scaltrezza in quanto deve essere tutto hostato su vps pseudonime, ma se volete provarci vi lascio questa guida di [:link: Turtlecute](https://github.com/Turtlecute33) - [:link: turtlecute.org/VPN](https://turtlecute.org/vpn/).<br>
-Una vostra VPN, doventro renstradare i vostri pacchetti dati, non la potete hostare in casa vostra su un raspberry, altrimenti l'IP in uscita sarebbe proprio quello a vostro nome.<br>
+Una vostra VPN, dovendo reinstradare i vostri pacchetti dati, non la potete hostare in casa vostra su un Raspberry-Pi, altrimenti l'IP in uscita sarebbe proprio quello a vostro nome.<br>
 Per lo stesso motivo, la VPS deve essere cercata senza KYC e pagata in BTC in modo che non possa essere ricondotta voi.<br>
 **ATTENZIONE !!** Anche il collegamento dati che farete per noleggiare questa VPS, deve essere *Anonimo* e questa guida si ripropone appunto di farvi capire di quali strumenti avete bisogno per queste evenienze. 
 
@@ -139,20 +139,20 @@ Come abbiamo visto in precedenza, se ci colleghiamo a TOR, la nostra ISP lo sapr
 Viceversa, se ci colleghiamo a TOR e dopo l'exit realy puntiamo ad una VPN, il sito finale vedrà l'indirizzo ip della VPN e non saprà che stiamo utilizzando TOR. Questo ci permetterebbe di visitare anche tutti quei siti che bloccano tutto ciò che proviene dalla rete TOR (ad esempio [:link: https://www.polito.it/](https://www.polito.it/)).<br>
 Per poter utilizzare questa tipologia di collegamento, dovete verificare che la vostra VPN supporti il traffico TOR (purtroppo non tutte lo accettano).
 
-Ricordiamoci, però che ogni passaggio in più che faranno i nostri dati, la velocità di connessione diminuirà.
+Ricordiamoci, però che con ogni passaggio in più che faranno i nostri dati, la velocità di connessione diminuirà.
 
 Visto quanto detto sopra, potrebbe sembrare che la migliore soluzione per la nostra privacy possa essere VPN + TOR, ma questo non ci permetterebbe di visitare tutti i siti.<br>
 Potrebbe essere quindi VPN + TOR + VPN la soluzione migliore?<br>
-Forse sì, ma sicuramente sarebbe assai lento nonché oneroso dovendo pagare due VPN, questo perchè le due VPN devono essere differenti altrimenti annulleremmo la privacy che ci grantiva TOR.
+Forse sì, ma sicuramente sarebbe assai lenta nonché onerosa dovendo pagare due VPN differenti, questo perchè le due VPN fossero la medesima, perderemmo la privacy che ci garantiva TOR.
 
-Quindi, ammesso di poter pagare due VPN distinte, il best case per privacy e fruibilità della rete potrebbe essere VPN + TOR per la navigazione normale a cui aggiungere una ulteriore VPN in uscita, solo per quei siti che non accettanto l'instradamento da un **exit** node.
+Quindi, ammesso di poter pagare due VPN distinte, il best case per privacy e fruibilità della rete potrebbe essere VPN + TOR per la navigazione normale a cui aggiungere una ulteriore VPN in uscita, solo per quei siti che non accettano l'instradamento da un **exit** node.
 
 ## Siti **.onion** (DarkWeb, ma non solo)
 I siti **.onion** sono raggiungibili unicamente utilizzando l'Onion Routing, ma funzionano in maniera differente da quello che abbiamo visto prima.<br>
 Molti pensano che i siti onion siano unicamente quelli del DarkWeb, ma sono in errore.<br>
 Un nodo personale BTC, se ben configurato, sarà raggiungibile sono tramite un indirizzo onion e nessuno di noi considera un full node come DarkWeb, vero ?
 
-Mettiamo che Alice voglia collegarsi alla mia istanza MemPool e, trattandosi di un indirizzo onion, è visitabile solo tramite protocollo TOR.<br>
+Mettiamo che Alice voglia collegarsi alla mia istanza MemPool e, trattandosi di un indirizzo onion, risulta visitabile solo tramite protocollo TOR.<br>
 Ipotizziamo quindi che Alice apra il suo TOR Browser e digiti il mio indirizzo onion, vediamo cosa farà il suo pacchetto dati:
 
 ![Onion Service](assets/Tor_Onion_Service_Diagram.jpg)
