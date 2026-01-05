@@ -65,7 +65,7 @@ Tutto quello che faremo con quel browser, passerà tramite la rete TOR.<br>
 Ad esempio, viene raccomandato di non fare torrent sotto TOR.<br>
 TOR Browser bloccherà i plugin Flash, RealPlayer, QuickTime e simili perché potrebbero essere manipolati per inviare il vostro indirizzo IP. Proprio per questo motivo, si sconsiglia vivamente di **NON** installare estensioni al browser TOR.
 
-Vediamo, invece, perchè potrebbe essere utile installare TOR come **servizio** nel computer (o nel telefono).
+Vediamo, invece, perché potrebbe essere utile installare TOR come **servizio** nel computer (o nel telefono).
 
 Installando TOR come servizio, abbiamo modo di far transitare tutto (o quasi) sotto rete TOR.<br>
 Cosa ci può servire questo?<br>
@@ -121,7 +121,7 @@ Dovendo dare fiducia ad un gestore, cadiamo nello stesso problema già menzionat
 In base a quanto detto sopra, c'è da chiedersi che dati raccolga una VPN commerciale, ma soprattutto cosa ne faccia di quei dati.<br>
 Se una autorità andrà a chiedere i tabulati del nostro traffico, che garanzia abbiamo che il gestore della VPN tuteli la nostra privacy?
 
-Tra le VPN commerciali, in rete, viene molto gettonata la VPN di [:link: Mullvad](https://mullvad.net/). Come seconda VPN gettonata, invece, troviamo [:link: Proton VPN](https://protonvpn.com) anche se, essendo gratuita, rischiamo di rientrare nel campo precedente.
+Tra le VPN commerciali, in rete, viene molto gettonata la VPN di [:link: Mullvad](https://mullvad.net/). Come seconda VPN gettonata, invece, troviamo [:link: Proton VPN](https://protonvpn.com/pricing) che offre anche una versione gratuita; bisognerebbe vedere se con questa rischiamo di rientrare nel campo precedente.
 
 **Io non do alcun tipo di consiglio su nessuna VPN**<br>
 Questa non vuole essere una guida a scopo commerciale, ma vi rendo noto che potreste crearne anche una vostra.<br>
@@ -138,7 +138,7 @@ Viceversa, se ci colleghiamo a TOR e dopo l'exit realy puntiamo ad una VPN, il s
 Ricordiamoci, però che ogni passaggi in più che faranno i nostri dati, rallenterà la connessione.
 
 Visto quanto detto sopra, sembra che il meglio per la nostra privacy possa essere VPN + TOR, ma questo non ci permetterebbe di visitare tutti i siti. Potrebbe essere quindi VPN + TOR + VPN la soluzione migliore?<br>
-Forse sì, ma sicuramente sarebbe assai lento nonchè oneroso dovendo pagare due VPN.<br>
+Forse sì, ma sicuramente sarebbe assai lento nonché oneroso dovendo pagare due VPN.<br>
 Quindi, VPN + TOR per la navigazione normale a cui aggiungere una ulteriore VPN solo per quei siti che non accettanto l'instradamento da un **exit** node.
 
 ## Siti **.onion** e DarkWeb
@@ -154,11 +154,11 @@ Questa modalità viene definita **The high-level design of onion services**. In 
 I dati transitano tramite 6 relays e nessuno di questi è un **exit** node.
 
 ## Nodo TOR personale
-Prima vi ho lasciato un link con una guida per creare una vostra VPN, ora farò lo stesso per il creare un relay TOR, ma se prima vi ho inviato caldamente ad affrontare quella sfida, per il nodo TOR, mi sento di sconsigliarvelo, quatomeno vi scosiglio di farlo con un vostro IP.<br>
+Prima vi ho lasciato un link con una guida per creare una vostra VPN, ora farò lo stesso per il creare un relay TOR, ma se prima vi ho inviato caldamente ad affrontare quella sfida, per il nodo TOR, mi sento di sconsigliarvelo, quantomeno vi sconsiglio di farlo con un vostro IP.<br>
 Essendo gli indirizzi dei nodi TOR pubblici, spessissimo (quasi sempre) gli IP che hostano realy TOR vengono bannati. Rischiereste quindi, che dall'IP a cui è collegato il nodo TOR, non riusciate più a collegarvi a tantissimi siti, oltre a rischiare che l'ISP vi disattivi il collegamento o che le forze dell'ordine vi bussino a casa.<br>
 Rimane sempre possibile noleggiare una VPS in maniera anonima e hostare su di essa una istanza TOR.<br>
 Prima di lasciarvi alla guida, vi informo che tirando su una istanza di un relay TOR, automaticamente verrete inseriti come **middle** relay a meno che non dichiariate espressamente di voler creare un **exit** node.<br>
-Questa tipologia di nodi, però, è sicuramente la più pericolosa perchè è quella direttamente esposta in rete.
+Questa tipologia di nodi, però, è sicuramente la più pericolosa perché è quella direttamente esposta in rete.
 
 Ed ecco la guida, sempre redatta dall'infaticabile [:link: Turtlecute](https://github.com/Turtlecute33) - [:link: turtlecute.org/TOR](https://turtlecute.org/tor/).
 
