@@ -100,7 +100,7 @@ Ci sono differenti tipologie di VPN, ma ora vedremo soltanto la versione che rei
 Quando utilizziamo una VPN, il nostro device si collega ad un server **centralizzato** che che reinstraderà il nostro traffico verso li sito che vogliamo visionare.
 
 Cosa vuol dire questo?<br>
-Esaminiamo la situazione equiparansola allo scenario di precedente: Alice utilizza una VPN per visitare un sito internet.<br>
+Esaminiamo la situazione equiparandola allo scenario di precedente: Alice utilizza una VPN per visitare un sito internet.<br>
 A questo punto, l'ISP di Alice saprà che Alice si sta connettendo ad un server. In genere l'ISP saprà che questo server è di una VPN, ma non saprà che sito Alice starà visitando.<br>
 Il gestore della VPN, invece, conoscerà sia l'indirizzo IP di Alice che il sito che stiamo visitando.
 
