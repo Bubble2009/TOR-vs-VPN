@@ -72,8 +72,6 @@ Cosa ci può servire questo?<br>
 Vi faccio alcuni esempi:
 * ho una casella di posta "*anonima*", ma collegandomi in chiaro, fornirei il mio indirizzo IP, pertanto l'anonimato andrebbe a farsi benedire.<br>
 con un servizio TOR, invece, potrei forzare il mio client di posta a collegarsi solo tramite l'Onion Routing;
-* ho una casella di posta "*anonima*", ma collegandomi in chiaro, fornirei il mio indirizzo IP, pertanto l'anonimato andrebbe a farsi benedire.<br>
-con un servizio TOR, invece, potrei forzare il mio client di posta a collegarsi solo tramite l'Onion Routing;
 * ho installato un software wallet sul mio computer, ma non ho un mio nodo, per far transitare le richieste sotto TOR, mi servirà TOR installato come servizio.
 * ci possono essere mille altri casi d'uso che magari aggiungerò con il tempo, ma per il momento credo di già dato un'idea de alcuni casi d'uso.
 
