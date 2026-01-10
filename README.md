@@ -132,7 +132,8 @@ Per lo stesso motivo, la VPS deve essere cercata senza KYC e pagata in BTC in mo
 Vediamo ora se e come possiamo mischiare queste due due tecnologie, ma soprattutto a cosa potrebbe servirci.
 
 #### TOR + VPN oppure VPN + TOR ?
-Come abbiamo visto in precedenza, se ci colleghiamo a TOR, la nostra ISP lo saprà. Collegarci ad una VPN prima di utilizzare l'Onion Routing, ci permetterebbe di nascondere alla nostra ISP che stiamo utilizzando TOR.
+Come abbiamo visto in precedenza, se ci colleghiamo a TOR, la nostra ISP lo saprà. Collegarci ad una VPN prima di utilizzare l'Onion Routing, ci permetterebbe di nascondere alla nostra ISP che stiamo utilizzando TOR.<br>
+Un'altro vantaggio di utilizzare una VPN prima di connetterci alla rete TOR, ci permette di nascondere il nostro indirizzo IP ad nodo Tor compromesso.
 
 Viceversa, se ci colleghiamo a TOR e dopo l'exit realy puntiamo ad una VPN, il sito finale vedrà l'indirizzo ip della VPN e non saprà che stiamo utilizzando TOR. Questo ci permetterebbe di visitare anche tutti quei siti che bloccano tutto ciò che proviene dalla rete TOR (ad esempio [:link: https://www.polito.it/](https://www.polito.it/)).<br>
 Per poter utilizzare questa tipologia di collegamento, dovete verificare che la vostra VPN supporti il traffico TOR (purtroppo non tutte lo accettano).
