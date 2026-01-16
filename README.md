@@ -173,7 +173,6 @@ Ed ecco la guida, sempre redatta dall'infaticabile [:link: Turtlecute](https://g
 
 ***
 **Disclaimer**: questa guida è stata redatta solamente per fornire una blanda panoramica di come funzionano queste tecnologie; per utilizzarle al meglio è necessario uno studio approfondito della materia.<br>
-
-Come sempre invito chiunque voglia commentare a farlo liberamente, accetto volentieri C&C che possano arricchire e/o correggere questo scritto.<br>
-Ho buttato tutto giù di getto, pertanto segnalatemi anche qualsiasi tipo di errore.<br>
-Per contatti diretti su Telegram: [Bubble2009](https://t.me/Contact_Bubble_bot).
+| | |
+| :------- | :--------: |
+|  Come sempre invito chiunque voglia commentare a farlo liberamente, accetto volentieri C&C che possano arricchire e/o correggere questo scritto.<br>Ho buttato tutto giù di getto, pertanto segnalatemi anche qualsiasi tipo di errore.<br><br> Per parlare con me di questa guida, unitevi al :link:[mio gruppo telegram](https://t.me/+GlEaD0WD53BmNGE0).| [![QR](assets/qr-code_ABC.png)](https://t.me/+GlEaD0WD53BmNGE0) |
