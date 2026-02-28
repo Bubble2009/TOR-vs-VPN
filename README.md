@@ -53,7 +53,7 @@ Quindi, il vostro ISP saprà che state utilizzando TOR, ma non saprà a che sito
 * Il sito internet a cui vi state collegando, saprà che state utilizzando TOR e potrebbe bloccare l'accesso ai dati che provengono da un relay.
 * *last but not least*, molti relays TOR sono in mano ad agenzie governative. Nella malaugurata ipotesi che, per somma sventura, vi dovesse capitare di collegarvi a tre relays tutti di proprietà di una agenzia governativa, quest'ultima sarà a conoscenza della vostra identità e del sito che andrete a visitare.
 
-Come vi spiegavo, gli indirizzi IP dei nodi TOR sono pubblici, vi lascio un esempio di un sito che li lista: [:link: relays.0x7c0.com](https://relays.0x7c0.com/misc/all.html). <br>
+Come vi spiegavo, gli indirizzi IP dei nodi TOR sono pubblici, vi lascio un esempio di un sito che li lista: :link:[relays.0x7c0.com](https://relays.0x7c0.com/misc/all.html). <br>
 
 **TOR vs TOR Browser**<br>
 Vediamo ora cosa cambia da utilizzare TOR rispetto a TOR Browser.<br>
@@ -78,7 +78,7 @@ Prima che qualcuno mi salti alla gola, devo dirvi che, una volta aperto TOR Brow
 Tenete sempre presente, però, che alcuni siti e servizi non funzionano se utilizzate TOR. Pertanto è necessario lasciare un qualche instradamento al di fuori di TOR per questi servizi.
 
 **Smartphone**<br>
-Parlo unicamente per telefoni Android, meglio ancora se ungoogled (vedi questa [mia altra guida](https://github.com/Bubble2009/Private-telephone-How-where-when-and-why-)):
+Parlo unicamente per telefoni Android, meglio ancora se ungoogled (vedi questa :link:[mia altra guida](https://github.com/Bubble2009/Private-telephone-How-where-when-and-why-)):
 
 * InviZible pro
     * installato come servizio in avvio automatico, veicola tutto il traffico dell'userspace in cui è installato sotto TOR
@@ -110,23 +110,81 @@ Se Alice si connette ad un sito senza VPN, sarà il suo ISP a conoscere sia l'in
 Usando una VPN, sarà invece il gestore della VPN a conoscere sia l'indirizzo IP di ALice che il sito che andrà a visitare.
 
 #### A chi volgiamo dare la nostra fiducia?
-Nei due esempi di prima, ci sarà sempre qualcuno che conoscerà sia il nostro indirizzo IP che il sito che andremo a visitare. Siamo noi a dover decidere a chi dare la nostra fiducia: al nostro ISP o al gestore della VPN ?
+Nei due esempi di prima, ci sarà sempre qualcuno che conoscerà sia il nostro indirizzo IP che il sito che andremo a visitare. Siamo noi a dover decidere a chi dare la nostra fiducia: al nostro ISP o al gestore della VPN?<br>
+Ho citato  questo passaggio in un gruppo Telegram (di cui parlerò sotto) e vi mostro un importante commento:
+
+![Palinuro](./assets/Telegram_Palinuro.jpg)
+
+Di seguito verrà spiegato il perché di questa frase.
 
 #### Tipi di VPN
-Dovendo dare fiducia ad un gestore, cadiamo nello stesso problema già menzionato in altre guide. Non c'è nulla di gratuito, pertanto, utilizzando una **VPN gratuita**, saremo noi il prodotto. Cosa ne farà dei dati raccolti, non possiamo saperlo, ma che raccoglierà i dati è sicuro, come è sicuro che ne trarrà profitto.
+Dovendo dare fiducia ad un gestore, cadiamo nello stesso problema già menzionato in altre guide.<br>
+*Non c'è nulla di gratuito*, pertanto, utilizzando una **VPN gratuita**, saremo noi il prodotto.<br>
+Cosa ne farà dei dati raccolti, non possiamo saperlo, ma che raccoglierà i dati è sicuro, come è sicuro che, in qualche modo, ne trarrà profitto.
 
 **VPN commerciali**.<br>
 In base a quanto detto sopra, c'è da chiedersi che dati raccolga una VPN commerciale, ma soprattutto cosa ne faccia di quei dati.<br>
 Se una autorità andrà a chiedere i tabulati del nostro traffico, che garanzia abbiamo che il gestore della VPN tuteli la nostra privacy?
 
-Tra le VPN commerciali, in rete, viene molto gettonata la VPN di [:link: Mullvad](https://mullvad.net/). Come seconda VPN gettonata, invece, troviamo [:link: Proton VPN](https://protonvpn.com/pricing) che offre anche una versione gratuita; bisognerebbe vedere se con questa rischiamo di rientrare nel campo precedente.
+Tra le VPN commerciali, in rete, viene molto gettonata la VPN di :link:[Mullvad](https://mullvad.net/). Come seconda VPN gettonata, invece, troviamo :link:[Proton VPN](https://protonvpn.com/pricing) che offre anche una versione gratuita; bisognerebbe vedere se con questa rischiamo di rientrare nel campo precedente.
+
+Pochi giorni dopo che ho scritto questa guida, Turtlecute ha pubblicato un post in cui parla proprio delle VPN che vi invito a leggere: :link:[Il Marketing delle VPN](https://telegra.ph/Il-Marketing-delle-VPN-01-29).<br>
+Oltre a rimarcare cose già affrontate in questa guida, Turtlecute mette sul piatto anche :link:[ObscuraVPN](https://obscura.net/) mentre ammette di non prendere in considerazione ProtonVPN perché non si fida dei **servizi Freemium**.
+
+#### Potenziali pericoli delle VPN
+E' arrivato il momento di argomentare la risposta postata prima.
+
+Recentemente, sul gruppo Telegram :link:[Bitcoin Sicurezza e Privacy](https://t.me/BitcoinSicurezzaPrivacy/159473), è stato postato il link di un articolo che illustra potenziali perdite di anonimato accoppiando VPN e TOR.<br>
+Da quel link è nata una costruttiva chiacchierata con :link:[Lorenzo "`Palinuro`"](https://github.com/PalinuroSec) che ha illustrato una vulnerabilità intrinseca alle VPN che ha generato la sua risposta che ho illustrato nella sezione [A chi vogliamo dare la nostra fiducia?](#a-chi-volgiamo-dare-la-nostra-fiducia).
+
+Lorenzo si occupa (tra le altre cose) di CyberSecurity e la sua osservazione punta proprio ad evidenziare una potenziale falla alla sicurezza facendo riferimento ad un tipo di attacco noto come **MITM** (Man in the Middle).<br>
+Per effettuare questo tipo di attacco a casa vostra, un attore malevolo, dovrebbe introdursi nella vostra abitazione e installare un dispositivo di ascolto tra il vostro computer ed il vostro modem.
+
+![MITM](./assets/MITM.jpg)
+`MITM - Man In The Middle - attacco in cui un entità malevole intercetta i vostri dati`
+
+In questo modo potrebbe raccogliere ed analizzare tutti i dati che transitano dal vostro computer.
+
+Se, invece, un attore malevolo si introducesse in un datacenter che ospita un vpn, non avrebbe bisogno di installare alcun dispositivo per poter raccogliere i vostri dati. Anzi, non avrebbe nemmeno bisogno **di introdursi nel datacenter**, visto che, tramite intrusione informatica, gli basterebbe dirottare tutto il vostro traffico e analizzarlo comodamente con qualche semplice comando.
+
+Pensate che il datacenter della vostra VPN sia blindato e sicuro?<br> Forse si! Ma siete pronti a scommettere che l'attore malevolo non possa essere direttamente il gestore o il SysAdmin del datacenter? [^1]
 
 **Io non do alcun tipo di consiglio su nessuna VPN**<br>
 Questa non vuole essere una guida a scopo commerciale, ma vi rendo noto che potreste crearne anche una vostra.<br>
-Richiede un po' di scaltrezza in quanto deve essere tutto hostato su vps pseudonime, ma se volete provarci vi lascio questa guida di [:link: Turtlecute](https://github.com/Turtlecute33) - [:link: turtlecute.org/VPN](https://turtlecute.org/vpn/).<br>
+Richiede un po' di scaltrezza in quanto deve essere tutto hostato su vps pseudonime, ma se volete provarci vi lascio questa guida di :link: [Turtlecute](https://github.com/Turtlecute33) - :link:[turtlecute.org/VPN](https://turtlecute.org/vpn/).<br>
 Una vostra VPN, dovendo reinstradare i vostri pacchetti dati, non la potete hostare in casa vostra su un Raspberry-Pi, altrimenti l'IP in uscita sarebbe proprio quello a vostro nome.<br>
 Per lo stesso motivo, la VPS deve essere cercata senza KYC e pagata in BTC in modo che non possa essere ricondotta voi.<br>
-**ATTENZIONE !!** Anche il collegamento dati che farete per noleggiare questa VPS, deve essere *Anonimo* e questa guida si ripropone appunto di farvi capire di quali strumenti avete bisogno per queste evenienze. 
+**ATTENZIONE !!** Anche il collegamento dati che farete per noleggiare questa VPS, deve essere *Anonimo* e questa guida si ripropone appunto di farvi capire di quali strumenti avete bisogno per queste evenienze.
+
+### **TOR ≠ Proxy**
+Spesso si tende a parlare di TOR definendolo con il termine Proxy.<br>
+Ora facciamo un po' di chiarezza su Proxy SOCKS5 e Proxy HTTP(S).
+
+Se seguito utilizzerò la parola **Proxy** come proxy **Proxy HTTP**.
+
+I proxy nacquero con internet, prima dell'introduzione del protocollo SSL, prima della crittografia, prima di tutto.<br>
+Forse i proxy nacquero prima dei proxy stessi.<br>
+A questi tempi, parlare di anonimato era quasi eresia. Ci si collegava ad internet con un modem analogico, legato ad un numero di telefono e pertanto ad una bolletta telefonica.<br>
+La velocità di internet era a dir poco penosa ed i proxy ci vennero incontro su questo.<br>
+I proxy sono contenitori di dati, ogni dato che veniva scaricato da un utente, veniva memorizzato all'interno di questo contenitore, così, se un secondo utente richiedeva lo stesso dato, il proxy lo aveva già disponibile, pertanto poteva fornirglielo molto più velocemente.<br>
+Visto che il nostro browser puntava al proxy, era poi il proxy a collegarsi (se necessario) al sito di destinazione, questo generava anche una sorta di "*anonimato*", ma che anonimato non era.
+
+Provo a spiegarmi meglio.
+
+Abbiamo visto in precedenza, che utilizzando una VPN, il sito di destinazione non vede il nostro IP mentre la VPN lo conosce; utilizzando un proxy, invece, otteniamo la stessa cosa lato server (ovvero il server non vedrà il nostro IP), ma il proxy, oltre a vedere il nostro IP, vedrà anche il pacchetto a cui abbiamo avuto accesso.<br>
+Questo perché, per avere un bacino di dati per permettere di "*accelerare*" la navigazione a chi ne fa uso, il proxy cercherà di inviare tutte richieste in chiaro traducendo eventuali richieste HTTPS (ove possibile) in richieste HTTP.<br>
+Un proxy, infatti, non può archiviare dati richiesti con la crittografia SSL, per questo cerca, ove possibile, di inviare tutte richieste in chiaro per poter archiviare i contenuti.
+
+Questi contenuti in chiaro, vengono archiviati su dei server.<br>
+Nessuno vieta ad un gestore di un proxy, di associare ogni contenuto salvato all'IP del (dei) richiedente (i).<br>
+Il gestore del proxy ha accesso a tutti i contenuti memorizzati nel suo server e potrebbe condividerli con eventuali entità esterne che ne faranno richiesta.
+
+Per questo motivo, con gli strumenti che abbiamo a disposizione al giorno d'oggi, **un proxy è il peggiore metodo di anonimizzazione che possiamo scegliere**.
+
+I proxy SOCKS, invece, lavorano a livello inferiore inoltrando i flussi di dati senza tentare di interpretarli.<br>
+Possiamo quindi affermare che un proxy SOCKS non altera i dati trasmessi e non aggiunge intestazioni o altro.
+
+**Vi suggerisco, pertanto, non di parlare di PROXY riferendovi a TOR**
 
 ## TOR + VPN
 Vediamo ora se e come possiamo mischiare queste due due tecnologie, ma soprattutto a cosa potrebbe servirci.
@@ -135,7 +193,7 @@ Vediamo ora se e come possiamo mischiare queste due due tecnologie, ma soprattut
 Come abbiamo visto in precedenza, se ci colleghiamo a TOR, la nostra ISP lo saprà. Collegarci ad una VPN prima di utilizzare l'Onion Routing, ci permetterebbe di nascondere alla nostra ISP che stiamo utilizzando TOR.<br>
 Un'altro vantaggio di utilizzare una VPN prima di connetterci alla rete TOR, ci permette di nascondere il nostro indirizzo IP ad nodo Tor compromesso.
 
-Viceversa, se ci colleghiamo a TOR e dopo l'exit realy puntiamo ad una VPN, il sito finale vedrà l'indirizzo ip della VPN e non saprà che stiamo utilizzando TOR. Questo ci permetterebbe di visitare anche tutti quei siti che bloccano tutto ciò che proviene dalla rete TOR (ad esempio [:link: https://www.polito.it/](https://www.polito.it/)).<br>
+Viceversa, se ci colleghiamo a TOR e dopo l'exit realy puntiamo ad una VPN, il sito finale vedrà l'indirizzo ip della VPN e non saprà che stiamo utilizzando TOR. Questo ci permetterebbe di visitare anche tutti quei siti che bloccano tutto ciò che proviene dalla rete TOR (ad esempio :link:[www.polito.it/](https://www.polito.it/)).<br>
 Per poter utilizzare questa tipologia di collegamento, dovete verificare che la vostra VPN supporti il traffico TOR (purtroppo non tutte lo accettano).
 
 Ricordiamoci, però che con ogni passaggio in più che faranno i nostri dati, la velocità di connessione diminuirà.
@@ -170,7 +228,8 @@ Questa tipologia di nodi, però, è sicuramente la più pericolosa perché è qu
 Ed ecco la guida, sempre redatta dall'infaticabile [:link: Turtlecute](https://github.com/Turtlecute33) - [:link: turtlecute.org/TOR](https://turtlecute.org/tor/).
 
 
-
+***
+[^1]: nella discussione su Telegram, Lorenzo, fa notare che i grossi Datacenter sono generalmente gestiti tramite hardware Cisco o Huawei, due grani aziende rispettivamente Americana e Cinese.<br>Conoscendo le abitudini di questi stati, non ci sarebbe da stupirsi che abbiano delle backdoor "statali" che un eventuale agenzia governativa a 3 lettere possa sfruttare.
 ***
 **Disclaimer**: questa guida è stata redatta solamente per fornire una blanda panoramica di come funzionano queste tecnologie; per utilizzarle al meglio è necessario uno studio approfondito della materia.<br>
 | | |
