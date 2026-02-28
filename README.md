@@ -141,6 +141,7 @@ Lorenzo si occupa (tra le altre cose) di CyberSecurity e la sua osservazione pun
 Per effettuare questo tipo di attacco a casa vostra, un attore malevolo, dovrebbe introdursi nella vostra abitazione e installare un dispositivo di ascolto tra il vostro computer ed il vostro modem.
 
 ![MITM](./assets/MITM.jpg)
+`MITM - Man In The Middle - attacco in cui un entità malevole intercetta i vostri dati`
 
 In questo modo potrebbe raccogliere ed analizzare tutti i dati che transitano dal vostro computer.
 
