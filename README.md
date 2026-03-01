@@ -150,7 +150,8 @@ Se, invece, un attore malevolo si introducesse in un datacenter che ospita un vp
 Pensate che il datacenter della vostra VPN sia blindato e sicuro?<br> Forse si! Ma siete pronti a scommettere che l'attore malevolo non possa essere direttamente il gestore o il SysAdmin del datacenter? [^1]
 
 **Io non do alcun tipo di consiglio su nessuna VPN**<br>
-Questa non vuole essere una guida a scopo commerciale, ma vi rendo noto che potreste crearne anche una vostra.<br>
+Questa non vuole essere una guida a scopo commerciale, e, viste le considerazioni di Palinuro e Tutlecute, lungi da me incentivarne l'utilizzo.<br>
+Voglio, però, rendervi noto che potreste crearne anche una vostra.<br>
 Richiede un po' di scaltrezza in quanto deve essere tutto hostato su vps pseudonime, ma se volete provarci vi lascio questa guida di :link: [Turtlecute](https://github.com/Turtlecute33) - :link:[turtlecute.org/VPN](https://turtlecute.org/vpn/).<br>
 Una vostra VPN, dovendo reinstradare i vostri pacchetti dati, non la potete hostare in casa vostra su un Raspberry-Pi, altrimenti l'IP in uscita sarebbe proprio quello a vostro nome.<br>
 Per lo stesso motivo, la VPS deve essere cercata senza KYC e pagata in BTC in modo che non possa essere ricondotta voi.<br>
