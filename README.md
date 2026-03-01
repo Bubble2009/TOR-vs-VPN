@@ -13,7 +13,7 @@ TOR è un protocollo, TOR Browser è, appunto, un browser che utilizza il protoc
 Dopo questa prima e sostanziale premessa, vi faccio un piccolissimo accenno al protocollo Onion Routing per cercare, in seguito, di spiegarvi come e perché utilizzarlo.
 
 ![Onion Routing 1](assets/Onion_Routing.png)
-Questa si sopra è un'immagine molto esplicativa, ma solo per chi già conosce questo protocollo.<br>
+Questa qui sopra è un'immagine molto esplicativa, ma solo per chi già conosce questo protocollo.<br>
 Iniziamo però a vedere le tre componenti del *routing*, ovvero: il nodo di **entrata**, il nodo **mediano** ed il nodo di **uscita**.
 
 Il protocollo Onion Routing si basa proprio su questi tre layer di separazione.<br>
@@ -40,12 +40,12 @@ Vediamo ora cosa è successo al nostro pacchetto di dati:
     * il nodo di uscita, ha una informazione importante, conosce il sito a cui qualcuno vuole collegarsi, ma non sa che quel qualcuno è Alice.
 
 Ecco il funzionamento dell'Onion Routing.<br>
-Il pacchetto di dati parte con un triplo strato che viene via via scoperto ogni passaggio che viene fatto nella rete TOR.
+Il pacchetto di dati parte con un triplo strato che viene via via scoperto ad ogni passaggio che viene fatto nella rete TOR.
 
 Ora che abbiamo visto grossolanamente come funziona la rete TOR, vediamo eventuali pro e contro nell'utilizzo di questo protocollo.
 
 * Partiamo con il dire che, dovendo passare attraverso tre relays, la comunicazione non potrà essere veloce dovendo essere reinstradata più volte;
-* Il vantaggio che questo protocollo ci da, è di poter mascherare il nostro indirizzo IP al sito che stiamo contattando, facendo in modo che questo sito non riesca a carpire la nostra identità.<br>
+* Il vantaggio che questo protocollo ci dà, è di poter mascherare il nostro indirizzo IP al sito che stiamo contattando, facendo in modo che questo sito non riesca a carpire la nostra identità.<br>
 Ovviamente, se poi ci stiamo collegando ad un servizio KYC, il sito saprà perfettamente chi siamo, ma vediamo il prossimo punto prima di commentare questa cosa;
 * Il vostro ISP (Internet Service Provider, ovvero colui il quale vi fornisce connettività) sarà a conoscenza che state utilizzando TOR.<br>
 Lo saprà perché gli indirizzi IP dei nodi TOR sono pubblici.<br>
@@ -57,7 +57,7 @@ Come vi spiegavo, gli indirizzi IP dei nodi TOR sono pubblici, vi lascio un esem
 
 **TOR vs TOR Browser**<br>
 Vediamo ora cosa cambia da utilizzare TOR rispetto a TOR Browser.<br>
-TOR Browser ci permette di navigare con un browser basato su Firefox che ci da accesso all'Onion Routing.<br>
+TOR Browser ci permette di navigare con un browser basato su Firefox che ci dà accesso all'Onion Routing.<br>
 Tutto quello che faremo con quel browser, passerà tramite la rete TOR.<br>
 **ATTENZIONE !!** la rete TOR ha dei limiti. Non è possibile fare tutto quello che vogliamo sotto rete TOR.<br>
 Ad esempio, viene raccomandato di non fare torrent sotto TOR.<br>
@@ -71,7 +71,7 @@ Vi faccio alcuni esempi:
 * ho una casella di posta "*anonima*", ma collegandomi in chiaro, fornirei il mio indirizzo IP, pertanto l'anonimato andrebbe a farsi benedire.<br>
 con un servizio TOR, invece, potrei forzare il mio client di posta a collegarsi solo tramite l'Onion Routing;
 * ho installato un software wallet sul mio computer, ma non ho un mio nodo, per far transitare le richieste sotto TOR, mi servirà TOR installato come servizio.
-* ci possono essere mille altri casi d'uso che magari aggiungerò con il tempo, ma per il momento credo di già dato un'idea de alcuni casi d'uso.
+* ci possono essere mille altri casi d'uso che magari aggiungerò con il tempo, ma per il momento credo di aver già dato un'idea di alcuni casi d'uso.
 
 Prima che qualcuno mi salti alla gola, devo dirvi che, una volta aperto TOR Browser, potete indirizzare il traffico di altri programmi tramite il browser stesso. Possiamo quindi affermare che non è INDISPENSABILE installare TOR come servizio, ma dobbiamo renderci conto che anche solo una apertura di un applicazione senza aver prima attivato TOR Browser, può far perdere l'anonimato.
 
@@ -98,7 +98,7 @@ Ci sono differenti tipologie di VPN, ma ora vedremo soltanto la versione che rei
 Quando utilizziamo una VPN, il nostro device si collega ad un server **centralizzato** che che reinstraderà il nostro traffico verso li sito che vogliamo visionare.
 
 Cosa vuol dire questo?<br>
-Esaminiamo la situazione equiparandola allo scenario di precedente: Alice utilizza una VPN per visitare un sito internet.<br>
+Esaminiamo la situazione equiparandola allo scenario precedente: Alice utilizza una VPN per visitare un sito internet.<br>
 A questo punto, l'ISP di Alice saprà che Alice si sta connettendo ad un server. In genere l'ISP saprà che questo server è di una VPN, ma non saprà che sito Alice starà visitando.<br>
 Il gestore della VPN, invece, conoscerà sia l'indirizzo IP di Alice che il sito che stiamo visitando.
 
@@ -149,7 +149,7 @@ Se, invece, un attore malevolo si introducesse in un datacenter che ospita un vp
 
 Pensate che il datacenter della vostra VPN sia blindato e sicuro?<br> Forse si! Ma siete pronti a scommettere che l'attore malevolo non possa essere direttamente il gestore o il SysAdmin del datacenter? [^1]
 
-**Io non do alcun tipo di consiglio su nessuna VPN**<br>
+**Io non dò alcun tipo di consiglio su nessuna VPN**<br>
 Questa non vuole essere una guida a scopo commerciale, ma vi rendo noto che potreste crearne anche una vostra.<br>
 Richiede un po' di scaltrezza in quanto deve essere tutto hostato su vps pseudonime, ma se volete provarci vi lascio questa guida di :link: [Turtlecute](https://github.com/Turtlecute33) - :link:[turtlecute.org/VPN](https://turtlecute.org/vpn/).<br>
 Una vostra VPN, dovendo reinstradare i vostri pacchetti dati, non la potete hostare in casa vostra su un Raspberry-Pi, altrimenti l'IP in uscita sarebbe proprio quello a vostro nome.<br>
@@ -160,11 +160,11 @@ Per lo stesso motivo, la VPS deve essere cercata senza KYC e pagata in BTC in mo
 Spesso si tende a parlare di TOR definendolo con il termine Proxy.<br>
 Ora facciamo un po' di chiarezza su Proxy SOCKS5 e Proxy HTTP(S).
 
-Se seguito utilizzerò la parola **Proxy** come proxy **Proxy HTTP**.
+Di seguito utilizzerò la parola **Proxy** come proxy **Proxy HTTP**.
 
 I proxy nacquero con internet, prima dell'introduzione del protocollo SSL, prima della crittografia, prima di tutto.<br>
 Forse i proxy nacquero prima dei proxy stessi.<br>
-A questi tempi, parlare di anonimato era quasi eresia. Ci si collegava ad internet con un modem analogico, legato ad un numero di telefono e pertanto ad una bolletta telefonica.<br>
+A quei tempi, parlare di anonimato era quasi eresia. Ci si collegava ad internet con un modem analogico, legato ad un numero di telefono e pertanto ad una bolletta telefonica.<br>
 La velocità di internet era a dir poco penosa ed i proxy ci vennero incontro su questo.<br>
 I proxy sono contenitori di dati, ogni dato che veniva scaricato da un utente, veniva memorizzato all'interno di questo contenitore, così, se un secondo utente richiedeva lo stesso dato, il proxy lo aveva già disponibile, pertanto poteva fornirglielo molto più velocemente.<br>
 Visto che il nostro browser puntava al proxy, era poi il proxy a collegarsi (se necessario) al sito di destinazione, questo generava anche una sorta di "*anonimato*", ma che anonimato non era.
@@ -187,7 +187,7 @@ Possiamo quindi affermare che un proxy SOCKS non altera i dati trasmessi e non a
 **Vi suggerisco, pertanto, non di parlare di PROXY riferendovi a TOR**
 
 ## TOR + VPN
-Vediamo ora se e come possiamo mischiare queste due due tecnologie, ma soprattutto a cosa potrebbe servirci.
+Vediamo ora se e come possiamo mischiare queste due tecnologie, ma soprattutto a cosa potrebbe servirci.
 
 #### TOR + VPN oppure VPN + TOR ?
 Come abbiamo visto in precedenza, se ci colleghiamo a TOR, la nostra ISP lo saprà. Collegarci ad una VPN prima di utilizzare l'Onion Routing, ci permetterebbe di nascondere alla nostra ISP che stiamo utilizzando TOR.<br>
@@ -207,7 +207,7 @@ Quindi, ammesso di poter pagare due VPN distinte, il best case per privacy e fru
 ## Siti **.onion** (DarkWeb, ma non solo)
 I siti **.onion** sono raggiungibili unicamente utilizzando l'Onion Routing, ma funzionano in maniera differente da quello che abbiamo visto prima.<br>
 Molti pensano che i siti onion siano unicamente quelli del DarkWeb, ma sono in errore.<br>
-Un nodo personale BTC, se ben configurato, sarà raggiungibile sono tramite un indirizzo onion e nessuno di noi considera un full node come DarkWeb, vero ?
+Un nodo personale BTC, se ben configurato, sarà raggiungibile solo tramite un indirizzo onion e nessuno di noi considera un full node come DarkWeb, vero ?
 
 Mettiamo che Alice voglia collegarsi alla mia istanza MemPool e, trattandosi di un indirizzo onion, risulta visitabile solo tramite protocollo TOR.<br>
 Ipotizziamo quindi che Alice apra il suo TOR Browser e digiti il mio indirizzo onion, vediamo cosa farà il suo pacchetto dati:
@@ -219,7 +219,7 @@ Questa modalità viene definita **The high-level design of onion services**. In 
 I dati transitano tramite 6 relays e nessuno di questi è un **exit** node.
 
 ## Nodo TOR personale
-Prima vi ho lasciato un link con una guida per creare una vostra VPN, ora farò lo stesso per il creare un relay TOR, ma se prima vi ho inviato caldamente ad affrontare quella sfida, per il nodo TOR, mi sento di sconsigliarvelo, quantomeno vi sconsiglio di farlo con un vostro IP.<br>
+Prima vi ho lasciato un link con una guida per creare una vostra VPN, ora farò lo stesso per creare un relay TOR, ma se prima vi ho invitato caldamente ad affrontare quella sfida, per il nodo TOR, mi sento di sconsigliarvelo, quantomeno vi sconsiglio di farlo con un vostro IP.<br>
 Essendo gli indirizzi dei nodi TOR pubblici, spessissimo (quasi sempre) gli IP che hostano realy TOR vengono bannati. Rischiereste quindi, che dall'IP a cui è collegato il nodo TOR, non riusciate più a collegarvi a tantissimi siti, oltre a rischiare che l'ISP vi disattivi il collegamento o che le forze dell'ordine vi bussino a casa.<br>
 Rimane sempre possibile noleggiare una VPS in maniera anonima e hostare su di essa una istanza TOR.<br>
 Prima di lasciarvi alla guida, vi informo che tirando su una istanza di un relay TOR, automaticamente verrete inseriti come **middle** relay a meno che non dichiariate espressamente di voler creare un **exit** node.<br>
@@ -229,7 +229,7 @@ Ed ecco la guida, sempre redatta dall'infaticabile [:link: Turtlecute](https://g
 
 
 ***
-[^1]: nella discussione su Telegram, Lorenzo, fa notare che i grossi Datacenter sono generalmente gestiti tramite hardware Cisco o Huawei, due grani aziende rispettivamente Americana e Cinese.<br>Conoscendo le abitudini di questi stati, non ci sarebbe da stupirsi che abbiano delle backdoor "statali" che un eventuale agenzia governativa a 3 lettere possa sfruttare.
+[^1]: nella discussione su Telegram, Lorenzo, fa notare che i grossi Datacenter sono generalmente gestiti tramite hardware Cisco o Huawei, due grandi aziende rispettivamente Americana e Cinese.<br>Conoscendo le abitudini di questi stati, non ci sarebbe da stupirsi che abbiano delle backdoor "statali" che un eventuale agenzia governativa a 3 lettere possa sfruttare.
 ***
 **Disclaimer**: questa guida è stata redatta solamente per fornire una blanda panoramica di come funzionano queste tecnologie; per utilizzarle al meglio è necessario uno studio approfondito della materia.<br>
 | | |
