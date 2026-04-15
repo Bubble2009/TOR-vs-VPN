@@ -226,7 +226,7 @@ Rimane sempre possibile noleggiare una VPS in maniera anonima e hostare su di es
 Prima di lasciarvi alla guida, vi informo che tirando su una istanza di un relay TOR, automaticamente verrete inseriti come **middle** relay a meno che non dichiariate espressamente di voler creare un **exit** node.<br>
 Questa tipologia di nodi, però, è sicuramente la più pericolosa perché è quella direttamente esposta in rete.
 
-Ed ecco la guida, sempre redatta dall'infaticabile [:link: Turtlecute](https://github.com/Turtlecute33) - [:link: turtlecute.org/TOR](https://turtlecute.org/tor/).
+Ed ecco la guida, sempre redatta dall'infaticabile :link: [Turtlecute](https://github.com/Turtlecute33) - :link: [turtlecute.org/TOR](https://turtlecute.org/tor/).
 
 
 ***
